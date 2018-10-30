@@ -4,8 +4,8 @@
 #import <SDWebImage/SDWebImageDownloader.h>
 #import "FLAnimatedImageView.h"
 
-#import <React/RCTComponent.h>
-#import <React/RCTResizeMode.h>
+#import "RCTComponent.h"
+#import "RCTResizeMode.h"
 
 #import "FFFastImageSource.h"
 
