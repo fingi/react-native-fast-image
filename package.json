@@ -25,7 +25,7 @@
   },
   "scripts": {
     "format": "prettier --write --no-semi --single-quote --trailing-comma all ./FastImage.js ./example/*.js ./server/*.js",
-    "prepare": "echo starting prepare... ; git clone git+ssh://git@github.com/SDWebImage/SDWebImage#f023c9bb6c4cb575ffb13e892205961a3d055ae6 ios/Vendor/SDWebImage ; cd ios/Vendor/SDWebImage ; pwd ; git submodule update --init --recursive",
+    "prepare": "echo starting prepare... ; git clone git@github.com:SDWebImage/SDWebImage.git ios/Vendor/SDWebImage ; cd ios/Vendor/SDWebImage ; pwd ; git checkout f023c9bb6c4cb575ffb13e892205961a3d055ae6 ; git submodule update --init --recursive",
     "test": "yarn run test:pretty && yarn run test:jest",
     "test:jest": "jest *.js",
     "test:pretty": "prettier-check --write --no-semi --single-quote --trailing-comma all ./FastImage.js ./example/*.js ./server/*.js"
